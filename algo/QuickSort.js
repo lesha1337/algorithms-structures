@@ -18,6 +18,12 @@ const randArr = (n=1000) => {
 
 const randInt = (n=1000) => (Math.floor(Math.random()*n));
 
-let unsortedArray = randArr();
-let sorted = QuickSort(unsortedArray);
-console.log(JSON.stringify(sorted));
+const runTest = () => {
+    let unsortedArray = randArr(20);
+    let sorted = QuickSort(unsortedArray);
+    console.log(JSON.stringify(sorted));
+}
+
+// runTest();
+
+module.exports = QuickSort;
